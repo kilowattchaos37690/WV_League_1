@@ -22,7 +22,10 @@ public class SamplePinpointKids extends LinearOpMode {
     if (!opModeIsActive()) {
       return;
     }
+    RobotPinpointMyBlocks.driveForwardOdo(10.0, 0.4);
+    RobotPinpointMyBlocks.strafeRightOdo(6.0, 0.35);
     RobotPinpointMyBlocks.turnDegreesOdo(90, 0.15);
+    RobotPinpointMyBlocks.driveForwardOdo(-10.0, 0.4);
     RobotPinpointMyBlocks.reportPose();
     telemetry.update();
     sleep(5000);
